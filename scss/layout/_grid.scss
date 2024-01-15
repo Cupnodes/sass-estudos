@@ -1,0 +1,24 @@
+.grid{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+    @media (min-width: 900px){
+        grid-template-columns: 2fr 1fr;
+    }
+
+    &__main,
+    &__sidebar{
+       padding: 1em;
+        
+    }
+
+    &__main{
+        background-color: rgb(6, 6, 113);
+    }
+
+    &__sidebar{
+        background-color: rgb(100, 6, 100);
+    }
+}
